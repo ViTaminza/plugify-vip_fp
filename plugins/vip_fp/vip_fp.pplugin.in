@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${VIP_FP_VERSION}",
+	"name": "vip_fp",
+	"description": "[VIP] Fast Plant: a bomb_beginplant hook sets the held C4's m_fArmedTime to the current game time for a VIP with the 'fp' feature, so the plant counts as already armed. Ported from the Pisex VIP core module VIP_FastPlant (vip_fp). Requires the vip core.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/vip_fp",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "vip",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	]
+}
